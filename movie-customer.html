@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Movie Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-sm back">
+                <div class="container">
+                    <a class="navbar-brand font-colour" href="index.html">Movie Cruiser</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="search">
+                            <a href="#"><div class="input-group-prepend">
+                                <span class="input-group-text"><span class="material-icons">search</span></span>
+                            </div></a>
+                        </div>
+                    </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link font-colour" href="movie-customer.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-colour" href="Favourite-movies.html">Favoutites<span class="badge  badge-danger">3</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ytimg.com/vi/F2ZIMeqgZ6E/maxresdefault.jpg" alt="Joker" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://specials-images.forbesimg.com/imageserve/5cc0c243a7ea436c70f3ba2f/960x0.jpg?fit=scale" alt="Avengers" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i3.wp.com/bestmoviecast.com/wp-content/uploads/2019/01/shazam.jpg" alt="Shazam" width="100%">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+    <section>
+        <div class="container pb-3 mb-5">
+            <div class="row pt-3 mt-3">
+                <div class="col-12 back">
+                    <h1 class="font-colour" align="center">List of Movies and Trailers</h1>
+                </div>
+                
+            </div>
+            <div class="row" id="movies">
+                <div class="col-md-4 col-lg-3 col-sm-6 pt-3">
+                    <div class="card">
+                        <img src="https://www.moriareviews.com/rongulator/wp-content/uploads/Thor-Ragnarok-2017-poster-439x650.jpg" class="card-img-top" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title text-justify">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a href="#">Thor Ragnarok</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <span class="material-icons fav">favorite_border</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-subtitle lead clearfix">
+                                <span class="badge badge-pill badge-success badge-active text-right">Active</span>
+                                Sci-Fi
+                            </p>
+                            <p class="card-text clearfix">
+                                <div class="row">
+                                    <div class="col-8 text-secondary">
+                                        <span class="material-icons">schedule</span>Launch
+                                        15/03/2017
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-primary btn-warning ml-auto">
+                                            Trailer
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-sm-6 pt-3">
+                    <div class="card">
+                        <img src="https://www.movienewsletters.net/photos/130835R1.jpg" class="card-img-top" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title text-justify">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a href="#">Arrow</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <span class="material-icons fav">favorite_border</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-subtitle lead clearfix">
+                                <span class="badge badge-pill badge-success badge-active text-right">Active</span>
+                                Superhero
+                            </p>
+                            <p class="card-text clearfix">
+                                <div class="row">
+                                    <div class="col-8 text-secondary">
+                                        <span class="material-icons">schedule</span>Launch
+                                        15/03/2017
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-primary btn-warning ml-auto">
+                                            Trailer
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-sm-6 pt-3">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Badhaai_Ho_Official_Poster.jpg" height="300" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title text-justify">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a href="#">Badhai Ho</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <span class="material-icons fav">favorite</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-subtitle lead clearfix">
+                                <span class="badge badge-pill badge-success badge-active text-right">Active</span>
+                                Comedy
+                            </p>
+                            <p class="card-text clearfix">
+                                <div class="row">
+                                    <div class="col-8 text-secondary">
+                                        <span class="material-icons">schedule</span>Launch
+                                        15/03/2017
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-primary btn-warning ml-auto">
+                                            Trailer
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6 pt-3">
+                    <div class="card">
+                        <img src="https://www.gstatic.com/tv/thumb/v22vodart/15839930/p15839930_v_v8_ab.jpg" class="card-img-top" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title text-justify">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a href="#">Isn't it Romantic</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <span class="material-icons fav">favorite_border</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-subtitle lead clearfix">
+                                <span class="badge badge-pill badge-success badge-active text-right">Active</span>
+                                Romantic
+                            </p>
+                            <p class="card-text clearfix">
+                                <div class="row">
+                                    <div class="col-8 text-secondary">
+                                        <span class="material-icons">schedule</span>Launch
+                                        24/06/2019
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-primary btn-warning ml-auto">
+                                            Trailer
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 pt-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1RJJUBGRZFEzfSmdG4biDlXDAhsrpvgwLWkO-wSIfyePuZJAj" class="card-img-top" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title text-justify">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a href="#">Annihilation</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <span class="material-icons fav">favorite</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-subtitle lead clearfix">
+                                <span class="badge badge-pill badge-success badge-active text-right">Active</span>
+                                Sci-Fi
+                            </p>
+                            <p class="card-text clearfix">
+                                <div class="row">
+                                    <div class="col-8 text-secondary">
+                                        <span class="material-icons">schedule</span>Launch
+                                        15/03/2017
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-primary btn-warning ml-auto">
+                                            Trailer
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-lg-3 col-sm-6 pt-3">
+                    <div class="card">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw9GNAiU9MLuZKlWADfeGXnN38l20s3-WrwUHa37T0CUSve0oM" class="card-img-top" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title text-justify">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a href="#">Shazam</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <span class="material-icons fav">favorite</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <p class="card-subtitle lead clearfix">
+                                <span class="badge badge-pill badge-success badge-active text-right">Active</span>
+                                Comedy
+                            </p>
+                            <p class="card-text clearfix">
+                                <div class="row">
+                                    <div class="col-8 text-secondary">
+                                        <span class="material-icons">schedule</span>Launch
+                                        15/03/2017
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="btn btn-primary btn-warning ml-auto">
+                                            Trailer
+                                        </a>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav class="navbar back">
+                <div class="container">
+                    <p class="nav-item font-colour">Copyright 2020</p>
+                </div>
+            </nav>
+        </footer>
+        <script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

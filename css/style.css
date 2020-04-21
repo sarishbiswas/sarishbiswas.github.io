@@ -1,0 +1,21 @@
+.back{
+	background-color: navy;
+}
+.font-colour{
+	color: white;
+}
+.jumbotron{    
+  	background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQcRGL7hXoY15uPXLkXaKH5OrUkDcl8MBXAy3BFqqcjacHpkI0p&usqp=CAU');
+  	background-position: center;
+  	text-shadow: 2px 0px #000000;
+  	padding-top: 10vh!important;
+  	padding-bottom: 15vh!important;
+  	padding-left: 10vw;
+}
+.alone{
+	min-height: 92vh;
+}
+.carousel{
+	max-height: 90vh!important;
+	overflow: hidden;
+}

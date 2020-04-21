@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Movie Admin</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <div class="alone">
+		<header>
+			<nav class="navbar navbar-expand-sm back">
+				<div class="container">
+					<a class="navbar-brand font-colour" href="index.html">Movie Cruiser</a>
+  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    					<span class="navbar-toggler-icon"></span>
+  					</button>
+  					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    					<ul class="navbar-nav ml-auto">
+      						<li class="nav-item">
+        						<a class="nav-link font-colour" href="movie-admin.html">Home</a>
+      						</li>
+      						<li class="nav-item">
+        						<a class="nav-link font-colour" href="#">Edit Movie</a>
+      						</li>
+      					</ul>
+      				</div>
+				</div>
+
+			</nav>
+		</header>
+      <section class="container-fluid alone pt-12">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <h1>Edit Movie</h1>
+                  </div>
+              </div>
+              <form action="#">
+                  <div class="row">
+                    <div class="col-12 form-group">
+                        <label for="title">Movie Title</label>
+                        <input type="text" name="title" id="title" class="form-control" required>
+                    </div>
+                    <div class="col-md-3 form-group">
+                          <label for="posterLink">Poster Link</label>
+                          <input type="url" name="posterLink" id="posterLink" class="form-control" required>
+                      </div>
+                    <div class="col-md-3 form-group">
+                          <label for="boxOffice">Box Office</label>
+                          <input type="text" name="boxOffice" id="boxOffice" class="form-control"  required>
+                    </div>
+                    <div class="col-md-3 form-group">
+                          <label for="dateOfLaunch">Date of Launch</label>
+                          <input type="date" name="dateOfLaunch" id="dateOfLaunch" class="form-control" required>
+                    </div>
+                    <div class="col-md-3 form-group">
+                          <label for="genre">Genre</label>
+                          <select name="genre" id="genre" class="form-control" required>
+                              <option value="Science Fiction">Science Fiction</option>
+                              <option value="Superhero">Superhero</option>
+                              <option value="Romance">Romance</option>
+                              <option value="Comedy">Comedy</option>
+                              <option value="Adventure">Adventure</option>
+                              <option value="Thriller">Thriller</option>
+                            </select>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="teaser">Teaser</label><br/>
+                        <label class="radio-inline"><input type="radio" name="teaser" id="teaserYes" value="true" required>Yes</label>
+                        <label class="radio-inline"><input type="radio" name="teaser" id="teaserNo" value="false" required>No</label>
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="active"  class="d-none d-sm-inline">Active <br/></label>
+                        <label class="checkbox-inline"><input type="checkbox" name="active" id="active" value="true"><span class="d-inline d-sm-none">Active</span></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-1 pl-xs-1">
+                          <input type="submit" value="Save" class="btn btn-success form-control">
+                        </div>
+                  </div>
+              </form>
+            </div>
+        </section>
+      </div>
+        <footer>
+            <nav class="navbar back">
+                <div class="container">
+                    <p class="nav-item font-colour">Copyright 2020</p>
+                </div>
+            </nav>
+        </footer> 
+  </body>
+</html>
